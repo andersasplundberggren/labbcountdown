@@ -2,7 +2,7 @@
 const TITLE = "Nedräkning till lansering";
 // Sommartid (mar–okt): +02:00  •  Vintertid (okt–mar): +01:00
 const TARGET = new Date("2025-08-15T09:10:00+02:00");
-const TARGET_TEXT = "Mål: 31 december 2025 kl 23:59 (Stockholm)";
+const TARGET_TEXT = "💃🏻🕺🏻";
 
 // Ange YouTube-video-ID, t.ex. "dQw4w9WgXcQ"
 const YT_ID = "dQw4w9WgXcQ?si=9NUXI6f8ofYjhw2f";
