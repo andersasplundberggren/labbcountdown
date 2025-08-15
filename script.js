@@ -5,7 +5,7 @@ const DEFAULTS = {
   title: "Nedräkning till något svängigt",
   // Din tid: 15 aug 2025 kl 10:00 (Stockholm, sommartid +02:00)
   targetISO: "2025-08-15T10:00:00+02:00",
-  text: "💃🏻Klockan 10 den 15 augusti smäller det🕺🏻",
+  text: "Klockan 10.00 den 15 augusti smäller det!",
   yt: "dQw4w9WgXcQ" // bara video-ID, inte hela URL
 };
 
