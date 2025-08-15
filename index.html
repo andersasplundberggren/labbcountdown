@@ -32,6 +32,12 @@
 
     <p class="target" id="targetText"></p>
 
+    <!-- Verktygsrad med knapp för inbäddningskod -->
+    <div class="toolbar">
+      <button id="btnEmbed" class="btn">Hämta inbäddningskod</button>
+      <span class="note">Du kan bädda in den här sidan på valfri webbplats som tillåter <code>&lt;iframe&gt;</code>.</span>
+    </div>
+
     <!-- Sektion som visas när tiden är slut -->
     <section id="reveal" class="reveal hidden" aria-live="polite">
       <h2 id="revealTitle">Nu kör vi! 🎉</h2>
@@ -41,6 +47,29 @@
       <p class="hint">Videon startar utan ljud (autoplay-regler). Slå på ljud i spelaren.</p>
     </section>
   </main>
+
+  <!-- Modal för inbäddningskod -->
+  <div id="embedModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="embedTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="embedTitle">Inbäddningskod</h3>
+        <button id="embedClose" class="icon-btn" aria-label="Stäng">✕</button>
+      </div>
+      <p>Kopiera och klistra in denna <code>&lt;iframe&gt;</code> på din sida:</p>
+      <textarea id="embedCode" readonly></textarea>
+      <div class="modal-actions">
+        <button id="embedCopy" class="btn">Kopiera</button>
+        <button id="embedDone" class="btn ghost">Klar</button>
+      </div>
+      <p class="small">
+        Tips: Du kan styra innehållet via URL-parametrar:
+        <code>title</code>, <code>t</code> (ISO-tid), <code>text</code>, <code>yt</code>.
+      </p>
+    </div>
+  </div>
+
+  <!-- Liten toast -->
+  <div id="toast" class="toast hidden" role="status" aria-live="polite">Kopierat!</div>
 
   <script src="script.js"></script>
 </body>
