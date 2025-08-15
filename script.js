@@ -1,7 +1,7 @@
 /* Enkel nedräkning — ändra här */
 const TITLE = "Nedräkning";
 // Sommartid (mar–okt): +02:00  •  Vintertid (okt–mar): +01:00
-const TARGET = new Date("2025-08-15T09:00:00+01:00");
+const TARGET = new Date("2025-08-15T09:00:00+02:00");
 const TARGET_TEXT = "🥳";
 
 /* ———— Ingen ändring behövs nedan ———— */
