@@ -1,4 +1,4 @@
-/* Enkel nedräkning — behåller din layout och färger */
+/* Enkel nedräkning — behåller layout och färger */
 :root{
   --bg: #0b1220;
   --fg: #e6ebf5;
@@ -73,13 +73,49 @@ h1{
   place-items: center;
 }
 
-/* Siffrans stil */
 .value{
   font-variant-numeric: tabular-nums;
   font-weight: 800;
   font-size: clamp(40px, 8vw, 90px);
   line-height: 1;
   color: #eaf1ff;
+}
+
+/* Reveal-sektion (döljs tills klockan noll) */
+.reveal{
+  margin-top: 28px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity .5s ease, transform .5s ease;
+}
+.hidden{
+  opacity: 0;
+  transform: translateY(10px);
+  height: 0;
+  overflow: hidden;
+}
+
+/* Responsiv 16:9 videohållare */
+.video{
+  position: relative;
+  width: min(900px, 94vw);
+  aspect-ratio: 16 / 9;
+  margin: 12px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: #0a0f1d;
+  border: 1px solid rgba(255,255,255,.06);
+}
+.video iframe{
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+
+.hint{
+  color: var(--muted);
+  font-size: 13px;
 }
 
 /* Respons */
