@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Nedräkning</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1 id="title">Nedräkning</h1>
+
+    <div class="countdown" aria-live="polite">
+      <section class="unit" aria-label="Dagar">
+        <div class="label">DAGAR</div>
+        <div class="digits"><div class="card"><div class="value" id="days">00</div></div></div>
+      </section>
+      <section class="unit" aria-label="Timmar">
+        <div class="label">TIM</div>
+        <div class="digits"><div class="card"><div class="value" id="hours">00</div></div></div>
+      </section>
+      <section class="unit" aria-label="Minuter">
+        <div class="label">MIN</div>
+        <div class="digits"><div class="card"><div class="value" id="minutes">00</div></div></div>
+      </section>
+      <section class="unit" aria-label="Sekunder">
+        <div class="label">SEK</div>
+        <div class="digits"><div class="card"><div class="value" id="seconds">00</div></div></div>
+      </section>
+    </div>
+
+    <p class="target" id="targetText"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* Enkel nedräkning — behåller din layout och färger */
+:root{
+  --bg: #0b1220;
+  --fg: #e6ebf5;
+  --muted: #90a0bf;
+  --accent: #5b8cff;
+  --card: #0f172a;
+  --shadow: 0 20px 60px rgba(0,0,0,.35);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--fg);
+  background: radial-gradient(1200px 800px at 50% -10%, #1b2540 0%, var(--bg) 60%, #080b14 100%);
+  display: grid;
+  place-items: center;
+}
+
+.wrap{
+  width: min(1100px, 94vw);
+  text-align: center;
+  padding: 28px;
+}
+
+h1{
+  margin: 0 0 24px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  color: var(--fg);
+}
+
+.target{
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.countdown{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: min(22px, 3vw);
+  align-items: end;
+  justify-items: center;
+}
+
+.unit{ width: 100%; }
+
+.label{
+  font-size: 13px;
+  letter-spacing: .2em;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.digits{
+  display: flex;
+  justify-content: center;
+}
+
+/* Kort för varje enhet (ingen animation) */
+.card{
+  width: clamp(100px, 18vw, 180px);
+  height: clamp(84px, 16vw, 160px);
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(#0e1528, #0b1220);
+  border: 1px solid rgba(255,255,255,.06);
+  filter: drop-shadow(var(--shadow));
+  display: grid;
+  place-items: center;
+}
+
+/* Siffrans stil */
+.value{
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  font-size: clamp(40px, 8vw, 90px);
+  line-height: 1;
+  color: #eaf1ff;
+}
+
+/* Respons */
+@media (max-width: 640px){
+  .label{ font-size: 12px; }
+}
