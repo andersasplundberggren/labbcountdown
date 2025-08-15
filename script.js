@@ -1,8 +1,8 @@
 /* Enkel nedräkning — ändra här */
-const TITLE = "Varmt välkommen om";
+const TITLE = "Nedräkning";
 // Sommartid (mar–okt): +02:00  •  Vintertid (okt–mar): +01:00
-const TARGET = new Date("2025-08-18T08:00:00+01:00");
-const TARGET_TEXT = "Knickedicken med kicken till KLK🥳";
+const TARGET = new Date("2025-08-15T09:00:00+01:00");
+const TARGET_TEXT = "🥳";
 
 /* ———— Ingen ändring behövs nedan ———— */
 
