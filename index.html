@@ -31,6 +31,15 @@
     </div>
 
     <p class="target" id="targetText"></p>
+
+    <!-- Sektion som visas när tiden är slut -->
+    <section id="reveal" class="reveal hidden" aria-live="polite">
+      <h2 id="revealTitle">Nu kör vi! 🎉</h2>
+      <div class="video" id="videoMount" data-video-id="">
+        <!-- iframen sätts av scriptet när klockan slår noll -->
+      </div>
+      <p class="hint">Videon startar utan ljud (autoplay-regler). Slå på ljud i spelaren.</p>
+    </section>
   </main>
 
   <script src="script.js"></script>
